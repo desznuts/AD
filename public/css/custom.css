@@ -1,0 +1,330 @@
+/* Custom CSS to replace Tailwind CSS utilities used in the blade templates */
+
+/* Layout and spacing */
+
+.logout-container {
+    margin-left: auto;
+    }
+    
+    .logout-button {
+    color: #dc2626;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    }
+    .logout-button:hover {
+    text-decoration: underline;
+    }
+    
+    body, button, input, select, textarea {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.items-center {
+    align-items: center;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-center {
+    justify-content: center;
+}
+.min-h-screen {
+    min-height: 100vh;
+}
+.space-y-10 > * + * {
+    margin-top: 2.5rem; /* 10 * 0.25rem */
+}
+.space-y-4 > * + * {
+    margin-top: 1rem; /* 4 * 0.25rem */
+}
+.space-x-6 > * + * {
+    margin-left: 1.5rem; /* 6 * 0.25rem */
+}
+
+/* Width and max-width */
+.w-full {
+    width: 100%;
+}
+.max-w-md {
+    max-width: 28rem; /* 448px */
+}
+.max-w-4xl {
+    max-width: 56rem; /* 896px */
+}
+
+/* Background colors */
+.bg-gray-100 {
+    background-color: #f7fafc;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+.bg-green-100 {
+    background-color: #d4edda;
+}
+.bg-red-100 {
+    background-color: #f8d7da;
+}
+.bg-yellow-100 {
+    background-color: #fff3cd;
+}
+.bg-gray-200 {
+    background-color: #edf2f7;
+}
+.bg-black {
+    background-color: #000000;
+}
+.bg-yellow-400 {
+    background-color: #f6e05e;
+}
+.bg-red-500 {
+    background-color: #f56565;
+}
+.bg-yellow-500:hover {
+    background-color: #ecc94b;
+}
+.bg-red-600:hover {
+    background-color: #e53e3e;
+}
+.bg-gray-800:hover {
+    background-color: #2d3748;
+}
+
+/* Text colors */
+.text-gray-700 {
+    color: #4a5568;
+}
+.text-gray-600 {
+    color: #718096;
+}
+.text-green-700 {
+    color: #155724;
+}
+.text-red-700 {
+    color: #721c24;
+}
+.text-yellow-700 {
+    color: #856404;
+}
+.text-black {
+    color: #000000;
+}
+.text-white {
+    color: #ffffff;
+}
+.text-blue-600 {
+    color: #3182ce;
+}
+.text-pink-600 {
+    color: #d53f8c;
+}
+
+/* Font sizes and weights */
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.font-bold {
+    font-weight: 700;
+}
+.font-semibold {
+    font-weight: 600;
+}
+.font-light {
+    font-weight: 300;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Borders and rounding */
+.border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cbd5e0;
+}
+.border-b {
+    border-bottom-width: 1px;
+}
+.border-gray-300 {
+    border-color: #d2d6dc;
+}
+.border-green-400 {
+    border-color: #c3e6cb;
+}
+.border-red-400 {
+    border-color: #f5c6cb;
+}
+.border-yellow-400 {
+    border-color: #ffeeba;
+}
+.rounded {
+    border-radius: 0.25rem;
+}
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+/* Padding and margin */
+.p-2 {
+    padding: 0.5rem;
+}
+.p-3 {
+    padding: 0.75rem;
+}
+.p-6 {
+    padding: 1.5rem;
+}
+.mr-2 {
+    margin-right: 0.5rem;
+}
+.mb-4 {
+    margin-bottom: 1rem;
+}
+.mt-10 {
+    margin-top: 2.5rem;
+}
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Shadows */
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+}
+
+/* Table */
+.min-w-full {
+    min-width: 100%;
+}
+.text-left {
+    text-align: left;
+}
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+.hover\:bg-gray-100:hover {
+    background-color: #f7fafc;
+}
+.transition {
+    transition: background-color 0.3s ease;
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d2d6dc;
+    border-radius: 0.25rem;
+    outline: none;
+    box-sizing: border-box;
+}
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 2px rgba(66,153,225,0.5);
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    border: none;
+}
+button.bg-black {
+    background-color: #000000;
+    color: #ffffff;
+}
+button.bg-black:hover {
+    background-color: #2d3748;
+}
+button:focus {
+    outline: 2px solid #4a5568;
+    outline-offset: 2px;
+}
+
+/* Form radio buttons */
+.form-radio {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #d2d6dc;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.form-radio:checked::before {
+    content: "";
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: currentColor;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+}
+
+/* Text utilities */
+.list-disc {
+    list-style-type: disc;
+}
+.list-inside {
+    list-style-position: inside;
+}
+.text-center {
+    text-align: center;
+}
+
+/* Table action buttons */
+.btn-update {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin-right: 0.5rem;
+    background-color: #f6e05e; /* yellow-400 */
+    color: #000000;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn-update:hover {
+    background-color: #ecc94b; /* yellow-500 */
+}
+
+.btn-delete {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: #f56565; /* red-500 */
+    color: #ffffff;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn-delete:hover {
+    background-color: #e53e3e; /* red-600 */
+}
